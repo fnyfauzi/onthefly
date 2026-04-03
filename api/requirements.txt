@@ -1,0 +1,12 @@
+sqlite-vec
+python-multipart
+bscrypt
+fastapi
+uvicorn
+httpx
+sqlalchemy
+pymysql
+redis
+python-jose
+imutils
+aiomultiprocess

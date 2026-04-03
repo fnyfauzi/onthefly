@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  /* themes: dracula --default; */
+  /* themes: nord --default; */
+  /* themes: all; */
+  /* themes: false; */
+}
+
+/* Customize daisyui btn */
+@utility btn {
+  @apply rounded-full;
+}
+
+@layer components {
+  .container-full {
+    @apply flex h-screen w-full place-content-center m-0 overflow-hidden;
+  }
+  /* used by protected/viewer/show-2d/+page.svelte */
+  .box {
+    @apply border border-slate-400 rounded-box p-2;
+  }
+  /* used by protected/viewer/show-2d/+page.svelte */
+  .box:hover {
+    @apply bg-slate-400 text-white;
+  }
+  /* used by protected/viewer/show-2d/+page.svelte */
+  .midname {
+    @apply flex justify-center items-center text-sm;
+  }
+
+  /* used by protected/viewer/3d-test/+page.svelte and viewer/3d/+page.svelte */
+  .label-css2d {
+    @apply text-xl ml-6 text-shadow-2xs;
+  }
+
+  /* used by protected/viewer/show-3d/+page.svelte */
+  /* .card {
+    @apply absolute w-full bg-transparent opacity-10;
+  } */
+
+  /* used by protected/viewer/cubemap/+page.svelte */
+  .label-css2d-cubemap {
+    @apply text-5xl ml-12 text-shadow-2xs;
+  }
+}
